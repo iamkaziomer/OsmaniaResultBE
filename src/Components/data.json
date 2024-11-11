@@ -1,0 +1,273 @@
+{
+    "students": [
+      
+         {
+              "rollnumber": "160422733001",
+              "name": "MEHVISH WAHEED"
+            },  
+            
+            {
+              "rollnumber": "160422733002",
+              "name": "YASMEEN BEGUM"
+            },
+            {
+              "rollnumber": "160422733003",
+              "name": "RABIA AMTURRAHMAN MANSOOR"
+            },
+            {
+              "rollnumber": "160422733004",
+              "name": "NADIA ZAREEN"
+            },
+            {
+              "rollnumber": "160422733005",
+              "name": "SANA TASNEEM"
+            },
+            {
+              "rollnumber": "160422733006",
+              "name": "MOHAMMAD TOUSEEF BANU"
+            },
+            {
+              "rollnumber": "160422733007",
+              "name": "SYEDA ZOYA FATIMA"
+            },
+            {
+              "rollnumber": "160422733008",
+              "name": "AYESHA SARIA"
+            },
+            {
+              "rollnumber": "160422733009",
+              "name": "AZEEM UNISSA BEGUM"
+            },
+            {
+              "rollnumber": "160422733010",
+              "name": "NABEEL AHMED"
+            },
+            {
+              "rollnumber": "160422733011",
+              "name": "MOHAMMED ABDUL RAOOF"
+            },
+            {
+              "rollnumber": "160422733012",
+              "name": "MOHAMMED REHAN"
+            },
+            {
+              "rollnumber": "160422733013",
+              "name": "MOHAMMED ABDULLAH SHAREEF"
+            },
+            {
+              "rollnumber": "160422733014",
+              "name": "MOHD IRFAAN HASSAN KHAN"
+            },
+            {
+              "rollnumber": "160422733015",
+              "name": "MOHAMMED ABDUL FAHAD"
+            },
+            {
+              "rollnumber": "160422733016",
+              "name": "MOHAMMED ABDUL MALIK ATHER"
+            },
+            {
+              "rollnumber": "160422733017",
+              "name": "SABEERUL ISLAM"
+            },
+            {
+              "rollnumber": "160422733018",
+              "name": "AKHIL KHAN"
+            },
+            {
+              "rollnumber": "160422733019",
+              "name": "SAAD FARHAN KHAN"
+            },
+            {
+              "rollnumber": "160422733020",
+              "name": "SHAIK NAZIR BASHA"
+            },
+            {
+              "rollnumber": "160422733021",
+              "name": "HUSSAIN ALI KHAN"
+            },
+            {
+              "rollnumber": "160422733022",
+              "name": "SYED ABDUL SATTAR"
+            },
+            {
+              "rollnumber": "160422733023",
+              "name": "ATIF MOHAMMED KHALEEL"
+            },
+            {
+              "rollnumber": "160422733024",
+              "name": "ABDUL MUGHEES MOHAMMED ABDUL RAHMAN"
+            },
+            {
+              "rollnumber": "160422733025",
+              "name": "GHULAM MUJTABA"
+            },
+            {
+              "rollnumber": "160422733026",
+              "name": "ARHAM KHAN"
+            },
+            {
+              "rollnumber": "160422733027",
+              "name": "ABDULLAH MUKHTAR SHAIKH"
+            },
+            {
+              "rollnumber": "160422733028",
+              "name": "MOHAMMED SAIFUDDIN"
+            },
+            {
+              "rollnumber": "160422733029",
+              "name": "MOHAMMED HYDER AFNAN"
+            },
+            {
+              "rollnumber": "160422733030",
+              "name": "MOHAMMED FARDEEN KHAN"
+            },
+            {
+              "rollnumber": "160422733031",
+              "name": "MOHAMMED FURQAN BUKHARI"
+            },
+            {
+              "rollnumber": "160422733032",
+              "name": "MOHAMMED MUJTABA UDDIN"
+            },
+            {
+              "rollnumber": "160422733033",
+              "name": "ABDUL RAFEY WALEED"
+            },
+            {
+              "rollnumber": "160422733034",
+              "name": "MOHAMMED ZUBAIR SHARIEF"
+            },
+            {
+              "rollnumber": "160422733035",
+              "name": "MOHAMMED ZOHEB KHAN"
+            },
+            {
+              "rollnumber": "160422733036",
+              "name": "SHAIK AHMED ALI"
+            },
+            {
+              "rollnumber": "160422733037",
+              "name": "SUFIYAAN ABDUL SHAFI"
+            },
+            {
+              "rollnumber": "160422733038",
+              "name": "SAMEED AHMED SUBHANI"
+            },
+            {
+              "rollnumber": "160422733039",
+              "name": "MOHAMMED ABDUL MAJEED"
+            },
+            {
+              "rollnumber": "160422733040",
+              "name": "AFFAN ZULFEKHAR SHAHABI"
+            },
+            {
+              "rollnumber": "160422733041",
+              "name": "MOHAMMED AMAAN ALI ABDULLAH"
+            },
+            {
+              "rollnumber": "160422733042",
+              "name": "KAZI OMER"
+            },
+            {
+              "rollnumber": "160422733043",
+              "name": "MOHAMMED AYAAN BASHARATH"
+            },
+            {
+              "rollnumber": "160422733044",
+              "name": "SHAIK MOHAMMAD ABDUL HAIYE RAIYYAN"
+            },
+            {
+              "rollnumber": "160422733045",
+              "name": "MOHAMMAD ARSHAD"
+            },
+            {
+              "rollnumber": "160422733046",
+              "name": "IMADUDDIN MOHAMMED"
+            },
+            {
+              "rollnumber": "160422733047",
+              "name": "SK AFRIDI"
+            },
+            {
+              "rollnumber": "160422733048",
+              "name": "REYAAN HUSSAIN"
+            },
+            {
+              "rollnumber": "160422733049",
+              "name": "MOHAMMED MOOSA AYUB SHAIKH"
+            },
+            {
+              "rollnumber": "160422733050",
+              "name": "MOHAMMAD ANAS UDDIN"
+            },
+            {
+              "rollnumber": "160422733051",
+              "name": "MOHAMMED KAMRAAN KHAN"
+            },
+            {
+              "rollnumber": "160422733052",
+              "name": "SYED AHMED ALI QURESHI"
+            },
+            {
+              "rollnumber": "160422733053",
+              "name": "FADLULLAH MOHAMMED SIDDIQUI"
+            },
+            {
+              "rollnumber": "160422733054",
+              "name": "MOHAMMED SULEMAN WADOOD"
+            },
+            {
+              "rollnumber": "160422733055",
+              "name": "MOHAMMED RAZIQ SIDDIQUI"
+            },
+            {
+              "rollnumber": "160422733056",
+              "name": "MOHAMMED ABDUL RAHMAN"
+            },
+            {
+              "rollnumber": "160422733057",
+              "name": "MOHAMMED AAQIB REHAAN"
+            },
+            {
+              "rollnumber": "160422733058",
+              "name": "MOHAMMED HASAN ABID KHAN"
+            },
+            {
+              "rollnumber": "160422733059",
+              "name": "MOHAMMED JAHANGIR RAZA"
+            },
+            {
+              "rollnumber": "160422733060",
+              "name": "MOHAMMAD IMRAN MOHIUDDIN"
+            },
+            {
+              "rollnumber": "160422733301",
+              "name": "ASRA BANU"
+            },
+            {
+              "rollnumber": "160422733302",
+              "name": "AHMED RAFI UDDIN"
+            },
+            {
+              "rollnumber": "160422733303",
+              "name": "FAIZ AHMED"
+            },
+            {
+              "rollnumber": "160422733304",
+              "name": "MOHAMMED SAMI UDDIN"
+            },
+            {
+              "rollnumber": "160422733305",
+              "name": "MOHAMMED MUSSADIQ NAJEED"
+            },
+            {
+              "rollnumber": "160422733306",
+              "name": "MOHAMMED MUJTABA HANNAN"
+            }
+          ]
+      
+    
+  }
+  

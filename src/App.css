@@ -1,3 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #FAF0D8;
+  width: 1024px; /* Force the body width to 1024px */
+  overflow-x: scroll; /* Allow horizontal scrolling if content exceeds */
+  margin: 0 auto; /* Center the content */
+}
+
 .App {
   text-align: center;
 }
@@ -34,5 +46,48 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.markColumns {
+  background-color: #FAF0D8;
+  padding: 2px;
+  font-size: 13px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  line-height: normal;
+  color: rgb(0, 0, 0);
+  font-weight: 400;
+  border: solid 1px black;
+}
+
+.markColumns2 {
+  background-color: white;
+  padding: 2px;
+  font-size: 13px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  line-height: normal;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  border: solid 1px black;
+}
+
+.marks3 {
+  background-color: #FAF0D8;
+}
+
+.subjects {
+  text-align: left;
+}
+
+.rollInputWrapper {
+  background-color: #FAF0D8;
+}
+
+@media only screen and (max-width: 1024px) {
+  html, body {
+    width: 1024px; /* Force the body to always be 1024px */
+    overflow-x: scroll;
   }
 }
