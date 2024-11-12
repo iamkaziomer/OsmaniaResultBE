@@ -1,124 +1,110 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
 
-function ResultData(props) {
-    
+function ResultData({ rollnumber, checkButtonPress }) {
+  const [resultData, setResultData] = useState(null);
+
+  // Helper function to generate results for a student
+  const generateResultData = () => {
+    const subjects = [
+      { code: 'HS 104 EG', name: 'EFFECTIVE TECHNICAL COMMUNICATION IN ENGLISH', credits: 3 },
+      { code: 'HS 105 CM', name: 'FINANCE AND ACCOUNTING', credits: 3 },
+      { code: 'BS 207 MT', name: 'MATHEMATICS – III (PROBABILITY & STATISTICS)', credits: 4, fail: true },
+      { code: 'ES 305 EC', name: 'SIGNALS AND SYSTEMS', credits: 3, fail: true },
+      { code: 'PC 401 CS', name: 'OPERATING SYSTEMS', credits: 3 },
+      { code: 'PC 402 CS', name: 'COMPUTER ORGANIZATION', credits: 3 },
+      { code: 'PC 403 CS', name: 'DATABASE MANAGEMENT SYSTEMS', credits: 3 },
+      { code: 'PC 451 CS', name: 'COMPUTER ORGANIZATION LAB', credits: 1 },
+      { code: 'PC 452 CS', name: 'OPERATING SYSTEMS LAB', credits: 1 },
+      { code: 'PC 453 CS', name: 'DATABASE MANAGEMENT SYSTEMS LAB', credits: 1 },
+    ];
+
+    // Generate random grades and points for each subject, fail specific subjects
+    const gradesData = subjects.map(subject => {
+      const gradePoints = subject.fail ? 0 : Math.floor(Math.random() * 6) + 4; // Random grade points between 4 and 9
+      const grade = subject.fail ? 'F' : gradePoints >= 8 ? 'A' : gradePoints >= 6 ? 'B' : 'C';
+
+      return {
+        ...subject,
+        gradePoints,
+        grade,
+      };
+    });
+
+    // Calculate GPA based on credits and grade points
+    const totalCredits = subjects.reduce((acc, subject) => acc + subject.credits, 0);
+    const totalPoints = gradesData.reduce((acc, subject) => acc + subject.gradePoints * subject.credits, 0);
+    const cgpa = (totalPoints / totalCredits).toFixed(2); // Adjust CGPA calculation for failing grades
+
+    return { gradesData, cgpa };
+  };
+
+  useEffect(() => {
+    // Check if result data already exists in localStorage
+    const storedData = localStorage.getItem(`result_${rollnumber}`);
+    if (storedData) {
+      setResultData(JSON.parse(storedData));
+    } else {
+      // Generate and store result data in localStorage if not present
+      const data = generateResultData();
+      localStorage.setItem(`result_${rollnumber}`, JSON.stringify(data));
+      setResultData(data);
+    }
+  }, [rollnumber]);
+
+  if (!checkButtonPress || !resultData) {
+    return null;
+  }
+
   return (
-    <div style={{display:props.checkButtonPress?'flex':'none', justifyContent: 'center', margin: '12px'}}>
+    <div style={{ display: 'flex', justifyContent: 'center', margin: '12px' }}>
       <table style={{
         borderCollapse: 'collapse',
         width: '85%',
         textAlign: 'left',
-        backgroundColor:'white',
+        backgroundColor: 'white',
         fontFamily: 'Arial, sans-serif'
       }}>
         <thead>
-
-        
-        <tr>
+          <tr>
             <th colSpan="8" style={{
               backgroundColor: '#EDC987',
               padding: '2px',
               fontSize: '13px',
-              textAlign:'center',
-              font:'Arial',
-              style:'normal',
-              lineHeight:'normal',
-              color:'rgb(0,0,0)',
-              fontWeight:'700',
-              border:'solid 1px black'
+              textAlign: 'center',
+              color: 'rgb(0,0,0)',
+              fontWeight: '700',
+              border: 'solid 1px black'
             }}>
-            Marks Details
+              Marks Details
             </th>
-        </tr>
-        <tr>
+          </tr>
+          <tr>
             <th className='markColumns' colSpan="1">Sub Code</th>
             <th className='markColumns' colSpan="4">Subject Name</th>
             <th className='markColumns' colSpan="1">Credits</th>
             <th className='markColumns' colSpan="1">Grade Points</th>
             <th className='markColumns' colSpan="1">Grade Secured</th>
-        </tr>
-        <tr>
-            <td className='markColumns2' colSpan="1">HS 104 EG </td>
-            <td className='markColumns2 subjects' colSpan="4">EFFECTIVE TECHNICAL COMMUNICATION IN ENGLISH</td>
-            <td className='markColumns2 ' colSpan="1">3</td>
-            {/* grade points */}
-            <td className='markColumns2' colSpan="1">8</td> 
-            {/* Grade Secured */}
-            <td className='markColumns2' colSpan="1">A</td>
-        </tr>
-        <tr>
-    <td className='markColumns2' colSpan="1">HS 105 CM</td>
-    <td className='markColumns2 subjects' colSpan="4">FINANCE AND ACCOUNTING</td>
-    <td className='markColumns2' colSpan="1">3</td>
-    <td className='markColumns2' colSpan="1">5</td> 
-    <td className='markColumns2' colSpan="1">B</td>
-</tr>
-<tr>
-    <td className='markColumns2' colSpan="1">BS 207 MT</td>
-    <td className='markColumns2 subjects' colSpan="4">MATHEMATICS – III (PROBABILITY & STATISTICS)</td>
-    <td className='markColumns2' colSpan="1">4</td>
-    <td className='markColumns2' colSpan="1">7</td> 
-    <td className='markColumns2' colSpan="1">A</td>
-</tr>
-<tr>
-    <td className='markColumns2' colSpan="1">ES 305 EC</td>
-    <td className='markColumns2 subjects' colSpan="4">SIGNALS AND SYSTEMS</td>
-    <td className='markColumns2' colSpan="1">3</td>
-    <td className='markColumns2' colSpan="1">0</td> 
-    <td className='markColumns2' colSpan="1">F</td>
-</tr>
-<tr>
-    <td className='markColumns2' colSpan="1">PC 401 CS</td>
-    <td className='markColumns2 subjects' colSpan="4">OPERATING SYSTEMS</td>
-    <td className='markColumns2' colSpan="1">3</td>
-    <td className='markColumns2' colSpan="1">6</td> 
-    <td className='markColumns2' colSpan="1">D</td>
-</tr>
-<tr>
-    <td className='markColumns2' colSpan="1">PC 402 CS</td>
-    <td className='markColumns2 subjects' colSpan="4">COMPUTER ORGANIZATION</td>
-    <td className='markColumns2' colSpan="1">3</td>
-    <td className='markColumns2' colSpan="1">6</td> 
-    <td className='markColumns2' colSpan="1">D</td>
-</tr>
-<tr>
-    <td className='markColumns2' colSpan="1">PC 403 CS</td>
-    <td className='markColumns2 subjects' colSpan="4">DATABASE MANAGEMENT SYSTEMS</td>
-    <td className='markColumns2' colSpan="1">3</td>
-    <td className='markColumns2' colSpan="1">4</td> 
-    <td className='markColumns2' colSpan="1">E</td>
-</tr>
-<tr>
-    <td className='markColumns2' colSpan="1">PC 451 CS</td>
-    <td className='markColumns2 subjects' colSpan="4">COMPUTER ORGANIZATION LAB</td>
-    <td className='markColumns2' colSpan="1">1</td>
-    <td className='markColumns2' colSpan="1">9</td> 
-    <td className='markColumns2' colSpan="1">A</td>
-</tr>
-<tr>
-    <td className='markColumns2' colSpan="1">PC 452 CS</td>
-    <td className='markColumns2 subjects' colSpan="4">OPERATING SYSTEMS LAB</td>
-    <td className='markColumns2' colSpan="1">1</td>
-    <td className='markColumns2' colSpan="1">7</td> 
-    <td className='markColumns2' colSpan="1">C</td>
-</tr>
-<tr>
-    <td className='markColumns2' colSpan="1">PC 453 CS</td>
-    <td className='markColumns2 subjects' colSpan="4">DATABASE MANAGEMENT SYSTEMS LAB</td>
-    <td className='markColumns2' colSpan="1">1</td>
-    <td className='markColumns2' colSpan="1">7</td> 
-    <td className='markColumns2' colSpan="1">C</td>
-</tr>
-
-
-       
-        
-        
-        
+          </tr>
         </thead>
+        <tbody>
+          {resultData.gradesData.map((subject, index) => (
+            <tr key={index}>
+              <td className='markColumns2' colSpan="1">{subject.code}</td>
+              <td className='markColumns2 subjects' colSpan="4">{subject.name}</td>
+              <td className='markColumns2' colSpan="1">{subject.credits}</td>
+              <td className='markColumns2' colSpan="1">{subject.gradePoints}</td>
+              <td className='markColumns2' colSpan="1">{subject.grade}</td>
+            </tr>
+          ))}
+          <tr>
+            <td colSpan="8" style={{ fontWeight: 'bold', textAlign: 'center', padding: '10px' }}>
+              
+            </td>
+          </tr>
+        </tbody>
       </table>
     </div>
-  )
+  );
 }
 
-export default ResultData
+export default ResultData;
