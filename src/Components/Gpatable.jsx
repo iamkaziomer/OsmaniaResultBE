@@ -29,7 +29,7 @@ function Gpatable(props) {
             </tr>
             <tr>
               <th>
-              <th style={{alignItems:'center', display:'row', justifyContent:'center'}}><p>Sorry guys was just practicing</p></th>
+              <th style={{alignItems:'center', display:'row', justifyContent:'center'}}></th>
               </th>
             </tr>
         </thead>

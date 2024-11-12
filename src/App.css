@@ -91,3 +91,29 @@ body {
     overflow-x: scroll;
   }
 }
+
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.minimal-button {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  padding: 8px 16px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  transition:  0.3s ease, color 0.3s ease, border 0.3s ease;
+  text-decoration: none;
+}
+
+.minimal-button:hover {
+  background: #f5f5f5;
+  color: #111;
+  border-color: #ccc;
+}

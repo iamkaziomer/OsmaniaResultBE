@@ -103,7 +103,21 @@ function RollInput({ rollnumber, setrollnumber, setCheckButtonPress, setStudentN
               margin: '1px'
             }}>
               Please Enter 12 Digit Hall Ticket Number Ex: 161022749301, 161022748302.
+              
             </td>
+            
+
+          </tr>
+          <tr>
+          <a 
+  href="https://www.instagram.com/mjcetdevs/profilecard/?igsh=NDc3NThzc2xzNTh6" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  className="button-wrapper"
+>
+  <button className="minimal-button">Follow @MJCETDEVS</button>
+</a>
+
           </tr>
         </tbody>
       </table>
