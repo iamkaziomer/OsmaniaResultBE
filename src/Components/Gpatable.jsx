@@ -25,6 +25,12 @@ function Gpatable(props) {
                <th colSpan="2" className='markColumns2 marks3' >4</th> 
                <th colSpan="6" className='markColumns2 marks3'>PROMOTED--</th>
                <th colSpan="2" className='markColumns2 marks3'>-</th>
+              
+            </tr>
+            <tr>
+              <th>
+              <th style={{alignItems:'center', display:'row', justifyContent:'center'}}><p>Sorry guys was just practicing</p></th>
+              </th>
             </tr>
         </thead>
       </table>

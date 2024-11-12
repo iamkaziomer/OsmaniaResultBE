@@ -23,7 +23,7 @@ function App() {
       <PersonalDetailsTable studentName={studentName} checkButtonPress={checkButtonPress} setrollnumber={setrollnumber} rollnumber={rollnumber} />
       <ResultData checkButtonPress={checkButtonPress}/> 
       <Gpatable checkButtonPress={checkButtonPress} rollnumber={rollnumber} setrollnumber={setrollnumber}/>
-      <h1>Sorry guys was just practicing</h1>
+      
     </div>
   );
 }
